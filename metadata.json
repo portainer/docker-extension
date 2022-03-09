@@ -1,0 +1,16 @@
+{
+  "name": "Portainer",
+  "provider": "Portainer.io",
+  "vm": {
+    "composefile": "docker-compose.yml",
+    "exposes": { "socket": "docker.sock" }
+  },
+  "ui": {
+    "dashboard-tab": {
+      "title": "Portainer",
+      "root": "/",
+      "src": "index.html",
+      "backend": { "tcp": "9000" }
+    }
+  }
+}
