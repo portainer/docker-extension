@@ -3,6 +3,7 @@ version: '3'
 services:
   portainer:
     image: portainerci/portainer:pr6644
+    command: ["/portainer", "--admin-password", "Passw0rd;"]
     restart: unless-stopped
     security_opt:
       - no-new-privileges:true
