@@ -2,12 +2,11 @@ version: '3'
 
 services:
   portainer:
-    image: portainer/portainer-ce:2.11-ext
+    image: portainerci/portainer:pr6644
     restart: unless-stopped
     security_opt:
       - no-new-privileges:true
     volumes:
-      # - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - portainer_data:/data
     ports:

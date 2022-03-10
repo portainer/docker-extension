@@ -1,5 +1,7 @@
+ARG PORTAINER_IMAGE_NAME=portainer/portainer-ce
 ARG TAG=latest
-FROM portainer/portainer-ce:$TAG
+
+FROM $PORTAINER_IMAGE_NAME:$TAG
 
 FROM scratch
 
