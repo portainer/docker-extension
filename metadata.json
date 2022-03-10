@@ -1,6 +1,7 @@
 {
   "name": "Portainer",
   "provider": "Portainer.io",
+  "icon": "portainer.svg",
   "vm": {
     "composefile": "docker-compose.yml",
     "exposes": { "socket": "docker.sock" }
