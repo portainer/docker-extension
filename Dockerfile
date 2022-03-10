@@ -1,5 +1,5 @@
-ARG PORTAINER_IMAGE_NAME=portainer/portainer-ce
-ARG TAG=latest
+ARG PORTAINER_IMAGE_NAME=portainerci/portainer
+ARG TAG=pr6644
 
 FROM $PORTAINER_IMAGE_NAME:$TAG AS portainer
 
