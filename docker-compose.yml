@@ -11,8 +11,9 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - portainer_data:/data
     ports:
+      - 8000:8000
       - 9000:9000
       - 9443:9443
-    
 volumes:
   portainer_data:
+

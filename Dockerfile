@@ -15,4 +15,4 @@ COPY portainer.svg .
 COPY metadata.json .
 COPY docker-compose.yml .
 
-COPY --from=portainer /public /
+COPY --from=portainer /public /ui
