@@ -4,6 +4,7 @@ services:
   portainer:
     image: portainerci/portainer:pr6644
     command: ["--admin-password", "$$$$2a$$$$10$$$$HX4qSZhtQcvKUNmAsPXuPe9POkM7gdaFPcSnRjokgb8EkMI.1gkSa"]
+    # command: ["--generate-password"]
     restart: unless-stopped
     security_opt:
       - no-new-privileges:true

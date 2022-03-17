@@ -1,15 +1,16 @@
-all: remove extension install
+all: clean extension install
 
 ORG=portainer
 PORTAINER_IMAGE_NAME=portainerci/portainer
 TAG=pr6644
-VERSION=0.3.0
+VERSION=0.3.5
 IMAGE_NAME=$(ORG)/portainer-docker-extension
 TAGGED_IMAGE_NAME=$(IMAGE_NAME):$(VERSION)
 
-remove:
+clean:
 	-docker extension remove $(ORG)_portainer-docker-extension
 	-docker rmi $(PORTAINER_IMAGE_NAME):$(TAG)
+	-docker rmi $(IMAGE_NAME)
 
 extension:
 	docker build -t $(TAGGED_IMAGE_NAME) --build-arg TAG=$(TAG) --build-arg PORTAINER_IMAGE_NAME=$(PORTAINER_IMAGE_NAME) .
