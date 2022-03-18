@@ -10,7 +10,7 @@
     "dashboard-tab": {
       "title": "Portainer",
       "root": "/ui",
-      "src": "index.html",
+      "src": "index.html?v0.4.0",
       "backend": { "tcp": "9000" }
     }
   }
