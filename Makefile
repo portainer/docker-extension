@@ -3,7 +3,7 @@ all: clean extension install
 ORG=portainer
 PORTAINER_IMAGE_NAME=portainerci/portainer
 TAG=pr6644
-VERSION=0.3.5
+VERSION=0.3.6
 IMAGE_NAME=$(ORG)/portainer-docker-extension
 TAGGED_IMAGE_NAME=$(IMAGE_NAME):$(VERSION)
 
